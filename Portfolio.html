@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio website</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://kit.fontawesome.com/cf33d1ab13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!----------Header--------->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1><span id="M">M</span>y <span id="M">P</span>ortfolio.</h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headerText">
+        <p>Software Designer</p>
+        <h1>Hey, I'm <span id="name">Chaduer Isaac</span> <br>From <span >South Sudan</span></h1>
+      </div>
+    </div>
+  </div>
+<!----------About--------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="mk3.jpg">
+        </div>
+        <div class="about-col2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I'm Chaduer, a passionate software developer with 2 years of experience building scalable, user-centric applications and Websites.
+             I specialize in <span>HTML, CSS, JavaScript, Python, React, Node.js</span>
+            and thrive in transforming complex problems into elegant, efficient solutions.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building Android/IOS Apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2025 - current</span><br>UI/UX Designer at Juba University</li>
+                <li><span>6 months</span><br>Internship at Microsoft</li>
+                <li><span>2018 -2021</span><br>Tech Team Leader in High School</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2023-current</span><br>B.Tech from Mewar University-India</li>
+                <li><span>2020-2022</span><br>Computer Basic from High School</li>
+                <li><span>App Development</span><br>Building Android/IOS Apps</li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------Services--------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>✔ Custom, responsive websites tailored to your brand and audience. <br>
+            ✔ SEO-friendly structures for better visibility and performance. <br>
+            ✔ Fast-loading, mobile-optimized designs for seamless user experience. <br>
+            ✔ Clean, modern aesthetics with intuitive navigation.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>✔ User-centered interfaces that enhance engagement and usability. <br>
+            ✔ Wireframing & prototyping to refine interactions before development. <br>
+            ✔ Consistent branding with cohesive color schemes, typography, and icons. <br>
+            ✔ Usability testing to ensure intuitive and accessible designs. <br>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-apple-whole"></i>
+          <h2>App Design</h2>
+          <p>✔ Mobile-first approach for smooth iOS & Android experiences. <br>
+            ✔ Interactive prototypes to visualize app flow and functionality. <br>
+            ✔ Minimalist & functional UI for better user retention. <br>
+            ✔ Seamless onboarding & navigation to improve user satisfaction.</p>
+            <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------Porfolio--------->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Portfolio/Work</h1>
+      <div class="worklist">
+        <div class="work">
+          <img src="work1.jpg">
+          <div class="layer">
+            <h3>Weather App</h3>
+            <p>This app was designed for easy access of weather information around the world</p>
+              <a href="https://chaduer-isaac.github.io/Weather-App/weather.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>           
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="work2.jpeg">
+          <div class="layer">
+            <h3>Forex Market Website</h3>
+            <p>This Website I designed for a client is for those enthusiastic about Forex Trading
+               and wish to make money online</p>
+              <a href="https://chaduer-isaac.github.io/Mk-Forex/MyWebsite.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="temp2.jpg">
+          <div class="layer">
+            <h3>Temperature Converter</h3>
+            <p>This app was designed for easy conversion of temperatures</p>
+              <a href="https://chaduer-isaac.github.io/Temperature--Converter/index" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>           
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-----------contact----------->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> chaduerisaac@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +919189662026</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+          <a href="Chaduer.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your meassage"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright © Chaduer. Made with <i class="fa-solid fa-heart"></i> by Mk Markets</p>
+    </div>
+  </div>
+
+
+  <script>
+     
+      var tablinks= document.getElementsByClassName("tab-links");
+      var tabcontents= document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+    
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+
+  </script>
+
+  <script>
+   var sidemenu=document.getElementById("sidemenu");
+
+   function openmenu(){
+    sidemenu.style.right="0";
+   }
+
+   function closemenu(){
+    sidemenu.style.right="-200px";
+   }
+
+
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzKW7jrhPgq8n8ogyHLoGTFp5KN-py0MDB__3tmXNhn517xheIzBQCde8BuyCF-CBpR9g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="feedback submitted succesfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  
+</body>
+</html>
